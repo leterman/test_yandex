@@ -1,4 +1,5 @@
 import requests
+from test_app import *
 from pprint import pprint
 class YandexDisk:
 
@@ -38,5 +39,8 @@ class YandexDisk:
         return response.status_code
 token1="token"
 ya = YandexDisk(token=token1)
+test = TestAppUnitTest()
+test.test_yandex_check()
+test.test_yandex_success()
 # ya.get_files_list()
 # ya.upload_folder_to_disk('papka19')
